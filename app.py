@@ -36,8 +36,8 @@ def get_looped_frame(cap):
 
 def main():
     cap = cv2.VideoCapture(0)
-    cap_energy = cv2.VideoCapture('assets/energy.mp4')
-    cap_kame = cv2.VideoCapture('assets/kamehameha.mp4')
+    cap_energy = cv2.VideoCapture('energy.mp4')
+    cap_kame = cv2.VideoCapture('kamehameha.mp4')
     
     options = PoseLandmarkerOptions(
         base_options=BaseOptions(model_asset_path='pose_landmarker_heavy.task'),
